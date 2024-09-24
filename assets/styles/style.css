@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'DMSans';
+    src: url("../fonts/DMSans.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DMSans';
+}
+
+:root {
+    --light-purple-color: hsl(254, 88%, 90%);
+    --purple-color: hsl(256, 67%, 59%);
+    --light-yellow-color: hsl(31, 66%, 93%);
+    --yellow-color: hsl(39, 100%, 71%);
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 7%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 275px 75px 175px 250px;
+    gap: 15px;
+}
+
+.grid-item {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.create-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: var(--light-yellow-color);
+    padding: 25px;
+    grid-row: 1 / 3;
+
+    h2 {
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    i {
+        color: var(--purple-color);
+    }
+
+    img {
+        width: 150px;
+    }
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    grid-column: 2 / 4;
+    color: var(--white-color);
+    background: var(--purple-color);
+
+    h1 {
+        font-size: 3.75rem;
+        text-align: center;
+        font-weight: 500;
+
+        span {
+            color: var(--yellow-color);
+        }
+    }
+    img {
+        margin: 0 auto;
+        width: 150px;
+    }
+    p {
+        color: var(--light-purple-color);
+        font-size: .85rem;
+        text-align: center;
+    }
+}
+
+.schedule-to {
+    background: var(--light-purple-color);
+    grid-row: 1 / 4;
+    grid-column: 4 / 5;
+    padding: 25px;
+
+    h2 {
+        font-size: 1.75rem;
+        text-align: center;
+        font-weight: 600;
+        text-align: start;
+    }
+
+    img {
+        height: 365px;
+        padding: 15px 0;
+    }
+
+    p {
+        font-size: .9rem;
+        font-weight: 500;
+    }
+}
