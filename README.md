@@ -1,4 +1,1 @@
 # BENTO-GRID-MAIN
- 
-## Dificuldades
-

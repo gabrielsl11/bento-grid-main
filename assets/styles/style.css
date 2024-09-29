@@ -24,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #eeeeee;
 }
 
 .grid {
@@ -38,7 +39,7 @@ body {
     border-radius: 10px;
 }
 
-.create-content {
+.create-post {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +62,7 @@ body {
     }
 }
 
-.social-media {
+.five-stars {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,7 +91,7 @@ body {
     }
 }
 
-.schedule-to {
+.schedule-posts {
     background: var(--light-purple-color);
     grid-row: 1 / 4;
     grid-column: 4 / 5;
@@ -110,6 +111,103 @@ body {
 
     p {
         font-size: .9rem;
+        font-weight: 500;
+    }
+}
+
+.ai-content {
+    background: var(--yellow-color);
+    grid-row: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+
+    h2 {
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+    img {
+        width: 200px;
+    }
+}
+
+.multiple-platforms {
+    background: var(--white-color);
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+
+    img {
+        width: 305px;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+}
+
+.consistent-schedule {
+    background: var(--yellow-color);
+    grid-row: 2 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    gap: 15px;
+
+    img {
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 1.65rem;
+        font-weight: 600;
+    }
+}
+
+.audience-growth {
+    background: var(--white-color);
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 15px;
+
+    h1 {
+        font-size: 4.45rem;
+        font-weight: 500;
+    }
+
+    img {
+        width: 155px;
+    }
+}
+
+.grow-followers {
+    background: var(--purple-color);
+    grid-column: 3 / 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    gap: 5px;
+
+    img {
+        height: 225px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        color: var(--white-color);
+        font-size: 1.75rem;
         font-weight: 500;
     }
 }
